@@ -92,3 +92,30 @@ a:hover {
    margin:0;
    padding-left:0;
 }
+
+
+
+.accordion dt {
+   background-color:#FA8198;
+   padding:0.5em calc(1em + 2px);
+   color: white;
+   font-weight:bold;
+   cursor:pointer;
+
+
+}
+
+.accordion dt~dt {
+   margin-top:1em;
+}
+
+.accordion dd {
+   padding:1em;
+   margin-left: 0;
+   border: 2px solid #FA8198;
+   border-top-width:0;
+   display:none;
+   }
+
+
+

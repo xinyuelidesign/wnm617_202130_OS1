@@ -13,7 +13,7 @@
    --color-neutral-medium:#f79339ff;
    --color-neutral-dark:#343030;
 
-   --color-main-light:#fdc838ff;
+   --color-main-light:#F5F128;
    --color-main-medium:#6a4219ff;
    --color-main-dark:#0a4349;
 
@@ -265,7 +265,7 @@ input.search-input {
   display: inline-flex;
   width: 100%;
   font-size: inherit;
-  background-color: var(--color-neutral-light);
+  background-color: #BF74EB;
   border-radius: 2em;
   padding: 0.5em 1em;
   border-width: 0;

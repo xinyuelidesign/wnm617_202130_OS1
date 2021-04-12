@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Yolanda Richards",
+    "username": "user1",
+    "email": "user1@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/974/fff/?text=user1",
+    "date_create": "2020-08-05 02:31:09"
+  },
+  {
+    "id": 2,
+    "name": "Robertson Padilla",
+    "username": "user2",
+    "email": "user2@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/986/fff/?text=user2",
+    "date_create": "2020-07-01 11:36:32"
+  },
+  {
+    "id": 3,
+    "name": "Hurley Mcclain",
+    "username": "user3",
+    "email": "user3@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/962/fff/?text=user3",
+    "date_create": "2020-08-04 08:34:28"
+  },
+  {
+    "id": 4,
+    "name": "Ramos Elliott",
+    "username": "user4",
+    "email": "user4@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/709/fff/?text=user4",
+    "date_create": "2020-06-02 06:40:05"
+  },
+  {
+    "id": 5,
+    "name": "Louisa Blanchard",
+    "username": "user5",
+    "email": "user5@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/755/fff/?text=user5",
+    "date_create": "2020-01-30 12:56:33"
+  },
+  {
+    "id": 6,
+    "name": "Bright Velazquez",
+    "username": "user6",
+    "email": "user6@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/707/fff/?text=user6",
+    "date_create": "2020-10-03 10:58:17"
+  },
+  {
+    "id": 7,
+    "name": "Hardy Murphy",
+    "username": "user7",
+    "email": "user7@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/812/fff/?text=user7",
+    "date_create": "2021-04-01 01:25:28"
+  },
+  {
+    "id": 8,
+    "name": "Jan Mercer",
+    "username": "user8",
+    "email": "user8@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/749/fff/?text=user8",
+    "date_create": "2020-12-01 02:39:43"
+  },
+  {
+    "id": 9,
+    "name": "Holly Castaneda",
+    "username": "user9",
+    "email": "user9@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/980/fff/?text=user9",
+    "date_create": "2020-12-31 03:51:49"
+  },
+  {
+    "id": 10,
+    "name": "Preston Hood",
+    "username": "user10",
+    "email": "user10@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/979/fff/?text=user10",
+    "date_create": "2020-07-12 04:27:14"
+  }
+]

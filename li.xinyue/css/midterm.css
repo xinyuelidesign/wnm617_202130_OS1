@@ -157,7 +157,7 @@ hr {
 
 /* Navigation Elements */
 [data-role="header"] ul,
-#vehicle-profile-page [data-role="main"] ul {
+#color-profile-page [data-role="main"] ul {
   top: 3vh;
   list-style-type: none;
   margin: 0;
@@ -175,7 +175,7 @@ hr {
 }
 
 [data-role="header"] li,
-#vehicle-profile-page [data-role="main"] li{
+#color-profile-page [data-role="main"] li{
   border-bottom: 0;
 }
 
@@ -185,7 +185,7 @@ hr {
 }
 
 [data-role="header"] a,
-#vehicle-profile-page [data-role="main"] a {
+#color-profile-page [data-role="main"] a {
     display: block;
     margin: 0;
     padding: 0 1em;
@@ -203,7 +203,7 @@ hr {
   height: 2em;
 }
 
-#vehicle-profile-page [data-role="header"] ul li a,
+#color-profile-page [data-role="header"] ul li a,
 #add-new-page [data-role="header"] ul li a {
   text-align: left;
 }
@@ -593,22 +593,22 @@ hr {
   padding: 0.8em 2em 1em 2em;
 }
 
-#vehicle-profile-page [data-role="main"] ul {
+#color-profile-page [data-role="main"] ul {
   width: 100%;
   top: 0;
 }
 
-#vehicle-profile-page [data-role="main"] ul li {
+#color-profile-page [data-role="main"] ul li {
   text-align: center;
   flex: 1;
 }
 
-#vehicle-profile-page [data-role="main"] ul li a {
+#color-profile-page [data-role="main"] ul li a {
   height: 100%;
   text-align: center;
 }
 
-#vehicle-profile-page [data-role="main"] ul li a img {
+#color-profile-page [data-role="main"] ul li a img {
   height: 2em;
 }
 

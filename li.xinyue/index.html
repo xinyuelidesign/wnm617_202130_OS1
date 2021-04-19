@@ -3,70 +3,43 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>X-color</title>
-
-   <!-- <base href="/AAU/wnm617/lixinyue/"> -->
+   <title>X-Color</title>
 
    <link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
-   <link rel="stylesheet" href="css/app.css">
+   <link rel="stylesheet" href="css/midterm.css">
 
+   <!-- FONTS -->
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,600&display=swap" rel="stylesheet">
+
+   
    <script src="lib/js/jquery-2.2.4.min.js"></script>
 
-   
+   <script src="js/functions.js"></script>
+   <script src="js/pages.js"></script>
+   <script src="js/parts.js"></script>
    <script src="js/signin.js"></script>
    <script src="js/app.js"></script>
-<!-- lib before local -->
+   
    <script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
 </head>
+
 <body>
 
-<!-- Sign In -->
-   
-   <section data-role="page" id="signin-page" style="background-color:rgb(121 141 236 / 64%);
-;">
+   <!-- SIGNI-IN SECTION -->
+   <section data-role="page" id="signin-page">
+      <div id="Round"></div>
 
-
-      <div data-role="main" class="display-flex flex-vertical">
-         <div class="logo"><img src="img/x-color.png"></div>
-        <!--  <div class="flex-stretch"></div> -->
-         <div class="flex-stretch">
-            <div class="banner_text">
-               <h1>Sign in now!</h1>
-            </div>
-            <form class="form" id="signin-form" data-ajax="false" style="padding:1em">
-               <div class="form-control">
-                  <label for="signin-username" class="form-label">Username</label>
-                  <input class="form-input" type="text" id="signin-username" data-role="none">
-               </div>
-               <div class="form-control">
-                  <label for="signin-password" class="form-label">Password</label>
-                  <input class="form-input" type="password" id="signin-password" data-role="none">
-               </div>
-               <div class="form-control">
-                  <input type="submit" class="form-button" value="Sign In" data-role="none">
-               </div>
-            </form>
-            <div class="createnew">
-               <p>Or <a href="#register-page">Signup Now!</a></p>
-            </div>
-         </div>
-      </div>
-   </section>
-
-               <!-- SIGN-UP SECTION -->
-   <section data-role="page" id="register-page"style="background-color:rgb(121 141 236 / 64%);
-;">
-
-      
-      <div data-role="main" class="display-flex flex-vertical">
+      <div data-role="main" class="display-flex flex-mood">
          
-
+      
+      
          <div class="flex-stretch"></div>
 
          <div class="flex-none">
             <div class="welcome">
-               <h1>Welcome!</h1>
-               <h3>Please register your account</h3>
+               <h1>Hello!</h1>
+               <h3>Sign in to your account</h3>
             </div>
 
             <form action="" id="signin-form" data-ajax="false" class="form" style="padding: 1em">
@@ -75,15 +48,12 @@
                   <input class="form-input" type="text" id="signin-username" data-role="none">
                </div>
                <div class="form-control">
-                  <label for="signin-email" class="form-label">Email</label>
-                  <input class="form-input" type="text" id="signin-email" data-role="none">
-               </div>
-               <div class="form-control">
                   <label for="signin-password" class="form-label">Password</label>
                   <input class="form-input" type="password" id="signin-password" data-role="none">
                </div>
                <div class="form-control" style="overflow: hidden; margin: 1.5em 0;">
-                  <a href="#recent-page" class="form-button signin-button">Save</a>
+               <!-- <a href="#recent-page" class="form-button signin-button">Sign In</a> -->
+                  <input type="submit" class="form-button signin-button" value="Sign In" data-role="none">
                   <label class="keep">Keep me sign in
                      <input type="checkbox">
                   </label>
@@ -91,6 +61,60 @@
             </form>
 
             <div class="register">
+               <p>New here? <a href="#register-page">Register Now!</a></p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+
+
+
+
+
+
+
+
+   <!-- SIGN-UP SECTION -->
+   <section data-role="page" id="register-page">
+
+      <div id="Round-register"></div>
+      
+      <div data-role="main" class="display-flex flex-mood">
+         <div class="logo">
+            <img src="img/logo.png" alt="">
+         </div>
+
+         <div class="flex-stretch"></div>
+
+         <div class="flex-none">
+            <div class="welcome-register">
+               <h3>Please register your account</h3>
+            </div>
+
+            <form action="" id="register-form" data-ajax="false" class="form" style="padding: 1em">
+               <div class="form-control">
+                  <label for="register-username" class="form-label" style="color: #202f40;">Username</label>
+                  <input class="form-input" type="text" id="register-username" data-role="none" style="border: 1px solid #a0bfdd;">
+               </div>
+               <div class="form-control">
+                  <label for="register-email" class="form-label" style="color: #202f40;">Email</label>
+                  <input class="form-input" type="text" id="register-email" data-role="none" style="border: 1px solid #a0bfdd;">
+               </div>
+               <div class="form-control">
+                  <label for="register-password" class="form-label" style="color: #202f40;">Password</label>
+                  <input class="form-input" type="password" id="register-password" data-role="none" style="border: 1px solid #a0bfdd;">
+               </div>
+               <div class="form-control" style="overflow: hidden; margin: 1.5em 0;">
+                  <a href="#recent-page" class="form-button signin-button" style="background-color: #202f40;">Save</a>
+                  <label class="keep" style="color: #202f40;">Keep me sign in
+                     <input type="checkbox">
+                  </label>
+               </div>
+            </form>
+
+            <div class="register-register">
                <p>Already have an account? <a href="#signin-page">Sign in!</a></p>
             </div>
          </div>
@@ -98,43 +122,91 @@
    </section>
 
 
-            </div>
-         </div>
-      </div>
-   </section>
-
-
- 
 
 
 
 
-<!-- Recent Page -->
+
+
+
+
+   <!-- MAP SECTION -->
    <section data-role="page" id="recent-page">
       <div data-role="main">
-         <form class="search-form">
-            <div class="search-control">
-               <input class="search-input" type="search" name="s" placeholder="Search for colors" data-role="none">
-               <!-- <button type="submit">Submit</button> -->
-            </div>
-         </form>
-
-         <div class="map-icon-test icon" style="position: absolute; left: 30vw;top: 40vh; font-size: 1.4em;" data-activate="recent-test-modal">
-            <img src="img/icons/color.png"> 
+         <div class="map-icon-test icon" style="position: absolute; left: 20vh; top: 45vh; font-size: 2em" data-activate="#recent-test-modal">
+            <img src="img/location.png" alt="">
          </div>
 
          <div class="modal" id="recent-test-modal">
-            <div class="modal-popup small">
-               <div class="modal-body">popup</div>
+            <div class="modal-popup small" data-deactivate="#recent-test-modal">
+               <div class="modal-body">
+                  <div class="card display-number"><p>Toyota</p></div>
+                  <div class="card display-number"><p>Sedan</p></div>
+                  <div class="card display-number"><p>Daly City</p></div>
+               </div>
             </div>
          </div>
       </div>
-         <!-- <hr>
-         <button data-activate=".changeme" data-role="none">Activate</button>
-         <button data-deactivate=".changeme" data-role="none">Deactivate</button>
-         <button data-toggle=".changeme" data-role="none">Toggle</button>
-         <hr>
-         <div class="changeme">This is a div</div> -->
+      <footer data-role="footer" data-template="#footer-template"></footer>
+   </section>
+
+
+
+
+
+
+
+
+
+
+   <!-- LIST SECTION -->
+   <section data-role="page" id="list-page">
+      <header data-role="header">
+         <h1>My List</h1>
+         <ul style="z-index: 10000000;">
+            <li class="flex-stretch"></li>
+            <li>
+               <a href="#add-new-page">
+                  <img src="img/add.png" alt="">
+               </a>
+            </li>
+         </ul>
+      </header>
+
+      <div data-role="main" class="display-flex flex-mood">
+         <div class="middle-title" style="height: 14vh;">
+            <div class="search">
+               <form>
+                  <input type="search" placeholder="Search">
+               </form>
+
+            <!-- Question: display sort and filter -->
+               <div class="sort">
+                  <select>
+                     <option value="1">Color</option>
+                     <option value="2">warm</option>
+                     <option value="3">balance</option>
+                  </select>
+                  <select>
+                     <option value="1">Current feeling</option>
+                     <option value="2">Type</option>
+                     <option value="3">Location</option>
+                  </select>
+               </div>
+            </div>
+            <hr>
+         </div>
+
+         <div class="down-section" style="margin-top: 4vh;">
+            <div class="overscroll">
+
+               <ul>
+                  <div class="Moodlist"></div>
+                 
+               </ul>
+            </div>
+         </div>
+      </div>
 
       <footer data-role="footer" data-template="#footer-template"></footer>
    </section>
@@ -147,196 +219,224 @@
 
 
 
-<!-- List Page -->
-   <section data-role="page" id="list-page" style="background-color: #656565;">
-      <header data-role="header">
-         <h1> Category</h1>
-         <!-- h1{position:ab} default in front -->
+
+   <!-- USER PROFILE SECTION -->
+   <section data-role="page" id="user-profile-page">
+      
+       <header class="header" data-role="header" style="height: 40vh; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; background-size: cover;">
          <ul>
-            <!-- <li><a href="#" data-rel="back"><img src="img/icons/back.png" style="width: 10px;padding-top: 17px;"></a></li> -->
             <li class="flex-stretch"></li>
-            <li><a href="#" class="js-list-add-animal"
-               data-activate="#list-add-modal" style="font-size: 24px;
-               padding: 0 0.8em;">&plus;</a></li>
+            <li>
+               <a href="#" class="js-logout">
+                  <img src="img/out.png" alt="" style="width:  12%;">
+               </a>
+            </li>
          </ul>
-         <!-- ul{position:re} now ul is in front, not back-->
       </header>
-      <div data-role="main">
-         <form action="#" method="get" class="hotdog stack">
-            <!-- <div class="hotdog"> -->
-               <input type="search" name="s" placeholder="Search for places" data-role="none">
-               <button type="submit">Search</button>
-               <!-- <button type="submit">Submit</button> -->
-            <!-- </div> -->
-         </form>
-         <div class="overscroll">
-         <!-- ul>li*10>a[href=#animal-profile-page]>{Animal $} -->
-            
-            <ul>
-               <li><a href="#animal-profile-page" class="animal-profile-main">
-                  <img class="animal-list-image" src="img/colorred.jpg">
 
-                  <div class="animal-list-detail">
-                     <h3>Name:</h3>
-                     <p>Type:</p>
-                     <p>Location:</p>
-                  </div>
+   <!--  <div class="profile"></div> -->
 
-                  <img class="animal-icons-trash" src="img/icons/trash.png">
-                  </a>
-               </li>            
-
-               
-            </ul>
-         </div>
+      <div data-role="main" class="display-flex flex-mood profile">
+       
       </div>
 
-
-     
-      <!-- modal:-->
-      <!-- popup -->
-      
-      <footer data-role="footer" data-template="#footer-template"></footer>
-
-      <div class="modal" id="list-add-modal">
-         <div class="modal-back" data-deactivate="#list-add-modal"></div>
-         <form class="modal-popup" data-ajax="false" id="list-add-form">
-            <div class="modal-head">Head</div>
-            <div class="modal-body">
-               <div class="form-control">
-                  <label for="list-add-name" class="form-label">Name</label>
-                  <input class="form-input" type="text" id="list-add-name" data-role="none">
-               </div>
-               <div class="form-control">
-                  <label for="list-add-type" class="form-label">Type</label>
-                  <input class="form-input" type="text" id="list-add-type" data-role="none">
-               </div>
-            </div>
-            <div class="modal-foot display-flex">
+      <div class="modal" id="edit-profile">
+         <!-- <div class="modal-drawer right">
+            <div class="modal-head display-flex">
+               <div class="flex-none">Edit</div>
                <div class="flex-stretch"></div>
                <div class="flex-none">
-                  <a href="#" data-deactivate="#list-add-modal">Submit</a>
-               </div>
-            </div>          
-         </form>
-      </div>
-   </section>
-
-
-
-
-
-
-
-
-
-
-   <!-- USER DATA SECTION -->
-
-   <section data-role="page" id="user-profile-page">
-      <div data-role="main">
-         Profile
-         <p>
-            <a href="#" class="js-logout">Sign Out</a>
-         </p>
-
-         <div class="floater top right">
-            <a href="#" class="icon" data-activate="#user-settings-modal"><img src="img/icons/shishkabob.svg" alt=""></a>
-         </div>
-
-
-         <div class="modal" id="user-settings-modal">
-            <div class="modal-drawer right">
-               <div class="modal-head display-flex">
-                  <div class="flex-none">Head</div>
-                  <div class="flex-stretch"></div>
-                  <div class="flex-none"><a href="#"data-deactivate="#user-settings-modal">&times;</a></div>
-               </div>
-               <div class="modal-body"><div class="overscroll">
-                  
-               </div>
+                  <a href="#" data-deactivate="#edit-profile">&times;</a>
                </div>
             </div>
-         </div>
-      </div>
-      <footer data-role="footer" data-template="#footer-template"></footer>
-   </section>
-   
-
-
-
-
-
-   <!--  ANIMAL DATA SECTION -->
-
-   <section data-role="page" id="animal-profile-page">
-      <!-- <header data-role="header">
-         <h1>Search</h1>
-         <ul>
-            <li><a href="#" data-rel="back">Back</a></li>
-         </ul>
-      </header> -->
-      <div class="header" data-role="header">
-         <ul>
-            <li><a href="#" data-rel="back"><img src="img/x-color.png" style="width: 10px;padding-top: 17px;"></a></li>
-            <li><a href="#"><img src="img/icons/edit.png"style="width: 10px;padding-top: 17px;"></a></li>
-         </ul>
-      </div>
-      <div data-role="main" class="display-flex flex-vertical">
-         <div class="animal-top">
-            
-            <div class="middle">
-               <img src="img/x-color.png" style="border-radius: 50%; width: 15em; height: 15em; position: absolute;">
-            </div>
-         </div>
-         <div class="animal-bottom">
-            <div class="overscroll">
-               <!-- <div class="data-content">
-                  <form>
+            <div class="modal-body">
+               <div class="overscroll">
+                  <form action="" id="profile-form" data-ajax="false" class="form" style="padding: 0;">
                      <div class="form-control">
-                        <label for="Name" class="data-label">Name</label>
-                        <input type="text" class="data-input" placeholder="Brand">
+                        <label for="profile-firstname" class="form-label">First Name</label>
+                        <input class="form-input" type="text" id="profile-firstname" data-role="none" placeholder="Jane">
+                     </div>
+                     <div class="form-control">
+                        <label for="profile-lastname" class="form-label">Last Name</label>
+                        <input class="form-input" type="text" id="profile-lastname" data-role="none" placeholder="Smiths">
+                     </div>
+                     <div class="form-control">
+                        <label for="profile-email" class="form-label">Email</label>
+                        <input class="form-input" type="email" id="profile-email" data-role="none" placeholder="j.smiths@gmail.com">
+                     </div>
+                     <div class="form-control">
+                        <label for="profile-password" class="form-label">Password</label>
+                        <input class="form-input" type="password" id="profile-password" data-role="none" placeholder="••••">
+                     </div>
+                     <div class="form-control" style="overflow: hidden; margin: 1.5em 0;">
+                        <a href="#profile-page" class="form-button signin-button" style="float: none; margin: 0 auto;" data-deactivate="#edit-profile">Save</a>
                      </div>
                   </form>
-               </div> -->
-               <h3>Name</h3>
-               <p>Color Blue</p>
-
-               <h3>Type</h3>
-               <p>Blue Color Family</p>
-
-               <h3>Feature</h3>
-               <p>Because blue is favored by so many people, it is often viewed as a non-threatening color that can seem conservative and traditional. Blue calls to mind feelings of calmness or serenity. It is often described as peaceful, tranquil, secure, and orderly. Blue is often seen as a sign of stability and reliability.</p>
-
-               <h3>Location&Time</h3>
-               <p></p>
-               
-               
+               </div>
             </div>
+         </div> -->
+      </div>
+
+
+      <footer data-role="footer" data-template="#footer-template"></footer>
+   </section>
+
+
+
+
+
+
+
+
+
+
+<!-- VEHICLE PROFILE SECTION -->
+   <section data-role="page" id="vehicle-profile-page">
+      <header data-role="header" class="header" style="height: 40vh; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; background-size: cover;">
+            <!-- <a href="#" data-rel="back">Back</a> -->
+         <h1>Vehicle Detail</h1>
+         <ul style="z-index: 10000000;">
+            <li>
+               <a href="#" data-rel="back">
+                  <img src="img/back.png" alt="" style="width:  10%; margin-top: 10px;">
+               </a>
+            </li>
+            <li class="flex-stretch"></li>
+         </ul>
+      </header>
+
+      <div data-role="main" class="display-flex flex-mood profile">
+
+          <!-- <div class="middle-title" style="margin-top: 3vh; height: 7vh;">
+            <div class="profile-model" style="">Camry</div>
+            <ul style="position: relative;">
+               <li class="flex-stretch"></li>
+               <li class="flex-none" style="text-align: right; padding-right: 1em;">
+                  <img src="img/trash.png" alt="" style="width: 2em;">
+               </li>
+               
+            </ul>
+            <hr>
+         </div>
+         <div class="down-section">
+            <div class="overscroll">
+               <div class="display-data">
+                  <ul>
+                     <li style="height: 5vh;">
+                        <img src="img/like.png" alt="" style="height: 2em; padding: 0 1em; align-self: center;">
+                     </li>
+                     <li style="height: 5vh;">
+                        <a href="#add-new-page">
+                           <img src="img/edit.png" alt="">
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="card display-number"><p>Toyota</p></div>
+               <div class="card display-number"><p>Sedan</p></div>
+               <div class="card display-number"><p>Daly City</p></div>
+               <div class="form-control" style="overflow: hidden; margin: 1.5em 0;" data-activate="#see-map">
+                  <a href="#profile-page" class="form-button signin-button" style="float: none; margin: 0 auto; padding: 0.5em 1em; text-align: center; width: 50%;">Click to see map</a>
+               </div>
+            </div>
+            
+         </div> -->
+      </div>
+
+      <div class="modal" id="see-map">
+            <div class="modal-back" data-deactivate="#see-map"></div>
+            <div class="modal-popup" style="position: relative;">
+               <div class="map-icon-test" style="position: absolute; left: 10vh; top: 50vh; height: inherit; width: 30px;">
+            <img src="img/location.png" alt="">
+         </div>
+               <img src="img/map.png" alt="">
+
+            </div>
+            
+         </div>
+   </section>
+
+
+
+
+
+
+
+
+
+
+   <!-- ADD NEW SECTION -->
+   <section data-role="page" id="add-new-page">
+      <header data-role="header" style="height: 40vh; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; background-image: url(img/camry.jpeg); background-size: cover;">
+         <h1>Mood-color Detail</h1>
+         <ul style="z-index: 10000000;">
+            <li>
+               <a href="#" data-rel="back">
+                  <img src="img/back.png" alt="" style="width:  10%; margin-top: 10px;">
+               </a>
+            </li>
+            <li class="flex-stretch"></li>
+         </ul>
+      </header>
+
+      <div data-role="main">
+         <div class="overscroll">
+            <form action="" id="profile-form" data-ajax="false" class="form">
+               <div class="form-control">
+                  <label for="model" class="form-label">Model</label>
+                  <input class="form-input" type="text" id="model" data-role="none" placeholder="Camry">
+               </div>
+               <div class="form-control">
+                  <label for="make" class="form-label">Make</label>
+                  <input class="form-input" type="text" id="make" data-role="none" placeholder="Toyota">
+               </div>
+               <div class="form-control">
+                  <label for="vehicle-type" class="form-label">Type</label>
+                  <select class="form-input" type="text" id="vehicle-type" data-role="none">
+                     <option value="1">Sedan</option>
+                     <option value="2">SUV</option>
+                     <option value="3">Convertible</option>
+                     <option value="3">Pick-up</option>
+                  </select>
+               </div>
+               <div class="form-control">
+                  <label for="locatioin" class="form-label">Location</label>
+                  <input class="form-input" type="text" id="locatioin" data-role="none" placeholder="Daly City">
+               </div>
+            
+               <div class="form-control" style="overflow: hidden; margin: 1.5em 0;">
+                  <a href="#vehicle-profile-page" class="form-button signin-button" style="float: none; margin: 0 auto;">Save</a>
+               </div>
+            </form>
          </div>
       </div>
    </section>
 
 
-   <!-- <ul>
-      <li><a href="#recent-page"></a></li>
-      <li><a href="#list-page">List</a></li>
-      <li><a href="#user-profile-page">Profile</a></li>
-   </ul> -->
 
-
-
-   <!-- Footer Template -->
 
    <script type="text/template" id="footer-template">
-   <ul>
-         <li><a href="#recent-page"><img src="img/icons/color.png"></a></li>
-         <li><a href="#list-page"><img src="img/icons/list.png"></a></li>
-         <li><a href="#user-profile-page"><img src="img/icons/user.png"></a></li>
-   </ul>
+      <ul>
+         <li><a href="#recent-page">
+            <span><img src="img/pin.png" alt=""></a></span>
+            <span>Map</span>
+         </li>
+         <li><a href="#list-page">
+            <span><img src="img/list.png" alt=""></a></span>
+            <span>List</span>
+         </li>
+         <li><a href="#user-profile-page">
+            <span><img src="img/profile.png" alt=""></a></span>
+            <span>Profile</span>
+         </li>
+      </ul>
    </script>
-   <script type="text/template" id="animal-link-template">
-   This is an list link
-   </script>   
+
+
+
+
+
+
+
 </body>
 </html>

@@ -1,10 +1,13 @@
+const RecentPage = async (locations) => {
 
-const RecentPage = async () => {
-   let locations = await query({
-      type:'recent_locations',
-      params:[sessionStorage.userId]
-   });
-   console.log(locations)
+   if(!locations) {
+       locations = await query({
+            type:'recent_locations',
+            params:[sessionStorage.userId]
+      });
+   }
+   
+   console.log(locations.result)
 
    let valid_animals = locations.result.reduce((r,o)=>{
       o.icon = o.img;
@@ -23,16 +26,16 @@ const RecentPage = async () => {
          $.mobile.navigate("#animal-profile-page");*/
 
          /* INFOWINDOW EXAMPLE */
-         /*map_el.data("infoWindow")
+         map_el.data("infoWindow")
             .open(map_el.data("map"),o)
          map_el.data("infoWindow")
-            .setContent(makeAnimalPopup(valid_animals[i]))*/
+            .setContent(makeAnimalPopup(valid_animals[i]))
 
          /* ACTIVATE EXAMPLE */
-         $("#recent-drawer")
-            .addClass("active")
-            .find(".modal-body")
-            .html(makeAnimalPopup(valid_animals[i]))
+         // $("#recent-drawer")
+         //    .addClass("active")
+         //    .find(".modal-body")
+         //    .html(makeAnimalPopup(valid_animals[i]))
       })
    })
 }

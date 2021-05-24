@@ -5,13 +5,13 @@
 }
 
 :root {
-   --font-sans: 'Cabin', sans-serif;
+   --font-sans: 'preconnect', sans-serif;
    --font-serif:Cambria, Georgia, serif;
   
 
 
-   --color-neutral-light:#b58b6c;
-   --color-neutral-medium:#b5793b;
+   --color-neutral-light:#F07F6E;
+   --color-neutral-medium:#F0AE95;
    --color-neutral-dark:#351c11;
 
    --color-main-light:#FDF8E9;
@@ -41,6 +41,9 @@ h6 {
    font-family:var(--font-sans);
 }
 
+h1,h3{
+  text-align: center;
+}
 a {
    color:inherit;
    text-decoration:none;
@@ -626,7 +629,7 @@ a:hover {
 
 
 .sort .ui-select {
-    background-color: #956753;
+    background-color: gray;
     color: white;
     border-radius: 1em;
     margin-left: 3%;

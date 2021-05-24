@@ -4,5 +4,5 @@
 
 ### Important links 
 
--http://xinyuelidesign.com/AAU/wnm617/li.xinyue/index.html
+- http://xinyuelidesign.com/AAU/wnm617/li.xinyue/index.html
 

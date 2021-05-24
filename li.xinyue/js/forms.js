@@ -1,4 +1,3 @@
-
 const checkSignupForm = () => {
    let email = $("#signup-email").val();
    let password = $("#signup-password").val();
@@ -184,16 +183,31 @@ const checkSearchForm = async () => {
       params:[search,sessionStorage.userId]
    });
 
+   // console.log(search);
+
    makeAnimalListSet(
       animals.result,
       "No results found."
    );
 }
+// const checkRecentSearchForm = async () => {
+//    let search = $("#recent-search-value").val();
+//    console.log(search)
+// }
+
 const checkRecentSearchForm = async () => {
    let search = $("#recent-search-value").val();
-   console.log(search)
-}
+   console.log(search);
+   
+   let animals = await query({
+      type: "search_recent_animals",
+      params: [search, sessionStorage.userId]
+   });
+   console.log(animals);
 
+   RecentPage(animals);
+
+}
 
 
 // destructuring

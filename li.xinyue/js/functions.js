@@ -1,4 +1,3 @@
-
 // Promise
 const query = (options) => {
    return fetch('data/api.php',{
@@ -33,4 +32,3 @@ const checkData = (exterior_check) => new Promise((resolve,reject)=>{
    }
    interior_check();
 });
-

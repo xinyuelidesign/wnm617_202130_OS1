@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Animal Tracker</title>
+   <title>Period Tracker</title>
 
    <link rel="apple-touch-icon" href="logo_icon.png">
    <link rel="icon" href="img/logo.png">
@@ -31,7 +31,8 @@
 
    <script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
 
-       <link href="https://fonts.font.im/css?family=Cabin" rel="stylesheet">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;1,200;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -39,7 +40,10 @@
    <section data-role="page" id="signin-page"><div class="overscroll">
       <div data-role="main" class="display-flex flex-vertical">
 
-             <div class="logo" style="padding:1em">
+             <div class="logo" style=" display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%; ">
             <img src="img/logo.png" alt=""> 
 
             <h1 class="appname">U-care</h1>
@@ -157,11 +161,6 @@
                   <input class="form-input" type="text" id="signup-second-name" data-role="none" placeholder="What is Your Real Name?">
                </div>
 
-                <span>
-                  <label class="keep">By creating an account you agree to the terms of use and our privacy policy.
-                     <input type="checkbox">
-                  </label>
-                  </span>
 
 
                <div class="form-control">
@@ -211,7 +210,7 @@
 
       <header data-role="header" style="background-color:gray; height: 10vh;">
 
-         <h1 class="list-title" style="color: white; font-size: 1.7em; text-align: center; top:15%;">Cute Dogs list</h1>
+         <h1 class="list-title" style="color: white; font-size: 1.7em; text-align: center; top:15%;">My secret calendar</h1>
 
          <ul>
             <li class="flex-stretch" style="padding-left:0.5em">
@@ -251,15 +250,15 @@
             <div class="modal-head">Head</div>
             <div class="modal-body">
                <div class="form-control">
-                  <label for="list-add-name" class="form-label">Name</label>
+                  <label for="list-add-name" class="form-label">color</label>
                   <input class="form-input" type="text" id="list-add-name" data-role="none">
                </div>
                <div class="form-control">
-                  <label for="list-add-type" class="form-label">Type</label>
+                  <label for="list-add-mood" class="form-label">Type</label>
                   <input class="form-input" type="text" id="list-add-type" data-role="none">
                </div>
                <div class="form-control">
-                  <label for="list-add-breed" class="form-label">Breed</label>
+                  <label for="list-add-feature" class="form-label">degree</label>
                   <input class="form-input" type="text" id="list-add-breed" data-role="none">
                </div>
             </div>
@@ -298,8 +297,8 @@
 
          <div class="box" style=" margin-top:5em;">
          
-               <h4 class="about" style="color:gray;text-align: center; font-size: 1.3em;">“Dogs do <i>speak </i>,<br>but only to those who <br>know how to <i>listen</i>.” </br></h4>
-               <p style="color:gray;float:right;margin-right: 5em;"> <i>– Orhan Pamuk</i></p>
+               <h4 class="about" style="color:gray;text-align: center; font-size: 1.3em;">“Happy <i>Sad </i>” </br></h4>
+               <p style="color:gray;float:right;margin-right: 5em;"> <i>– May2021</i></p>
             </div>
 </div>
 </div></div></div>
@@ -431,7 +430,7 @@
 
    <section data-role="page" id="animal-edit-page">
       <header data-role="header" style="background-color:gray; height: 10vh;">
-         <h1 class="list-title" style="color: white; font-size: 1.5em; text-align: center; top:15%;">Edit Animal</h1>
+         <h1 class="list-title" style="color: white; font-size: 1.5em; text-align: center; top:15%;">Edit period</h1>
          <ul>
             <li><a href="#" data-rel="back" style="float:left;color:white; margin-top: 0.7em;">Cancel</a></li>
             <li class="flex-stretch"></li>
@@ -486,7 +485,7 @@
          <div class="overscroll">
             <form style="padding:1em">
                <div>
-                  <a href="#animal-add-page" class="form-button">Create New Animal</a>
+                  <a href="#animal-add-page" class="form-button">Create New</a>
                </div>
                <p style="text-align:center">Or Choose One Below</p>
                <div class="animal-choices">
@@ -581,7 +580,7 @@
 
 
    <script type="text/template" id="animal-link-template">
-   this is an animal link
+   track your period.
    </script>
 
 </body>

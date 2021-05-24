@@ -21,7 +21,7 @@
    --color-white:#fff;
    --color-black:#111;
 
-   --header-height:3rem;
+   --header-height:3.3rem;
 }
 
 
@@ -113,7 +113,7 @@ a:hover {
    line-height: var(--header-height);
    border-width:0;
    background-color: var(--color-white);
-   box-shadow:0 0 5px rgba(0,0,0,0.2);
+   box-shadow:0 0 5px rgba(0,0,0,0.3);
    position:relative;
   /* overflow:hidden;*/
 }
@@ -126,7 +126,7 @@ a:hover {
    height:100%;
    text-align:center;
    margin:0;
-   font-size:1rem;
+   font-size:1.2rem;
    padding:0;
 }
 
@@ -299,9 +299,9 @@ a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%,calc(-50% + 5vh));
-  border-radius:5px;
+  border-radius:4.4px;
   overflow:hidden;
-  transition:all 0.3s;
+  transition:all 0.4s;
 }
 .modal.active .modal-popup {
   transform: translate(-50%,-50%);
@@ -318,7 +318,7 @@ a:hover {
   position:absolute;
   display:flex;
   flex-direction:column;
-  transition: all 0.3s;
+  transition: all 0.33s;
   box-shadow:0 0 5px rgba(0,0,0,0.3);
 }
 .modal-drawer.left,
@@ -380,8 +380,8 @@ a:hover {
 /* ICONS */
 .icon svg,
 .icon img {
-  width:1em;
-  height:1em;
+  width:1.3em;
+  height:1.3em;
   vertical-align: text-bottom;
 }
 
@@ -507,7 +507,7 @@ a:hover {
   /*margin: 1em;*/
   /*border-radius: 1em;*/
   overflow: hidden;
-  border-bottom: 0.2px solid #b58b6c;
+  border-bottom: 0.2px solid #B8615A;
   /*box-shadow: 0 5px 10px rgb(0 0 0 / 20%);*/
 }
 
@@ -682,13 +682,13 @@ a:hover {
 }
 
 img.back {
-    height: 30px;
-    width: 30px;
-    margin-top: 10px;}
+    height: 35px;
+    width: 35px;
+    margin-top: 15px;}
 
 
 hr {
-    border: 0.1px solid #b58b6c;
+    border: 0.1px solid #B8615A;
    /* width: 90%;*/
 }
 .mid{
